@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+body {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    margin: 0;
+}
+
+header {
+    /* max-height: 200px; */
+    width: 100%;
+    border-bottom: 5px solid #114232;
+    height: 15%;
+
+    display: flex;
+    align-items: center;
+    column-gap: 10%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(255 255 255 / 90%);
+    z-index: 1;
+}
+
+header div#logo {
+    height: 100%;
+    /* width: 100px; */
+    width: 20%;
+}
+
+header div#logo img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+header div#menu {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+header div#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    column-gap: 5%;
+    height: 100%;
+    align-items: center;
+}
+
+header div#menu ul li {
+    transition: transform 0.5s;
+}
+
+header div#menu ul li:hover {
+    transform: scale(1.2);
+}
+
+header div#menu ul li a {
+    color: #114232;
+    text-decoration: none;
+    /* font-size: 22px; */
+}
+
+header div#menu ul li:hover a:hover {
+    color: #7fcc2b;
+    /* text-decoration: underline; */
+}
+
+main {
+    width: 100%;
+    /* height: calc(100vh - 100px - 60px); */
+    height: 100%;
+    /* margin-top: 100px; */
+    /* padding-top: 8%; */
+
+    display: flex;
+
+    background-color: #DAF7A6;
+}
+
+main section.container {
+    width: 100%;
+    height: 100%;
+
+    overflow-y: auto;
+}
+
+main section.container div.banner-principal {
+    width: 100%;
+    /* height: 70%; */
+    height: 60vh;
+
+   
+    background-image: url('/assets/about/vegan_2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color:#FFF;
+
+}
+
+main section.container div.content {
+    width: 100%;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+main section.container div.content div.list-products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+    gap: 30px;
+}
+
+main section.container div.content div.list-products div.card-producto {
+    /* flex-basis: 30%; */
+    /* flex-basis: 300px; */
+    flex-basis: 280px;
+    background-color: #fff;
+    /* padding: 20px; */
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+    border: 1px solid #114232;
+    transition: 0.4s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main section.container div.content div.list-products div.card-producto:hover {
+    box-shadow: 5px 5px 10px #114232;
+    transform: translate(-5px, -5px);
+}
+
+main section.container div.content div.list-products div.card-producto div.img-card-producto {
+    height: 50%;
+    width: 100%;
+}
+
+main section.container div.content div.list-products div.card-producto div.img-card-producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.container div.content div.list-products div.card-producto div.info-card-producto {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+main section.container div.content div.list-products div.card-producto div.footer-card-producto {
+    height: 15%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section.container div.content div.list-products div.card-producto div.footer-card-producto a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+main section.container div.content div.list-products div.card-producto div.footer-card-producto a:hover {
+    transform: scale(1.1);
+}
+
+main section.container div.content div.list-products div.card-producto div.footer-card-producto a:active {
+    transform: scale(1);
+}
+
+
+
+
+/* aside{
+    height: 100%;
+    max-width: 150px;
+    width: 30%;
+
+    border-right: 1px solid;
+
+    background-color: lightcoral;
+}
+aside h3{
+    text-align: center;
+}
+aside ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+aside ul li{
+    padding: 10px 10px 10px 20px;
+}
+aside ul li a{
+    color: #000;
+    text-decoration: none;
+} */
+
+
+
+footer {
+    width: 100%;
+    height: 60px;
+
+    background-color: #1a1a1a;
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3 {
+    margin: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+.disappear {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    bottom: 0;
+    top: 0;
+
+}
+
+.disappear span {
+    display: inline-block;
+    color: transparent;    
+    text-shadow: 0px 0px 0px #43c204;
+    animation-duration: 3s;
+    border-color: #1a1a1a;
+    background-color: hsl(120, 20%, 99%);
+    border-style: groove;
+    /* animation-iteration-count: infinite; */
+}
+
+.disappear span:nth-child(1) {
+    animation-name: disappearleft;
+}
+
+.disappear span:nth-child(2) {
+    animation-name: disappearleft;
+    animation-delay: .3s;
+}
+
+.disappear span:nth-child(3) {
+    animation-name: disappearight;
+    animation-delay: .6s;
+}
+
+.disappear span:nth-child(4) {
+    animation-name: disappearleft;
+    animation-delay: .8s;
+}
+
+.disappear span:nth-child(5) {
+    animation-name: disappearight;
+    animation-delay: 1s;
+}
+
+.disappear span:nth-child(6) {
+    animation-name: disappearight;
+    animation-delay: 1.3s;
+}
+
+.disappear span:nth-child(7) {
+    animation-name: disappearleft;
+    animation-delay: 1.6s;
+}
+
+.disappear span:nth-child(8) {
+    animation-name: disappearight;
+    animation-delay: 2s;
+}
+
+.disappear span:nth-child(9) {
+    animation-name: disappearight;
+    animation-delay: 2.3s;
+}
+
+.disappear span:nth-child(10) {
+    animation-name: disappearight;
+    animation-delay: 2.6s;
+}
+
+.disappear span:nth-child(11) {
+    animation-name: disappearight;
+    animation-delay: 2.9s;
+}
+
+.disappear span:nth-child(12) {
+    animation-name: disappearight;
+    animation-delay: 3.1s;
+}
+
+.disappear span:nth-child(13) {
+    animation-name: disappearight;
+    animation-delay: 3.4s;
+}
+.disappear span:nth-child(14) {
+    animation-name: disappearight;
+    animation-delay: 3.7s;
+}
+.disappear span:nth-child(15) {
+    animation-name: disappearight;
+    animation-delay: 3.9s;
+}
+.disappear span:nth-child(16) {
+    animation-name: disappearight;
+    animation-delay: 4.1s;
+}
+.disappear span:nth-child(17) {
+    animation-name: disappearight;
+    animation-delay: 4.3s;
+}
+
+
+
+@keyframes disappearleft {
+    50% {
+        transform: skew(50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+        opacity: 0;
+    }
+}
+
+@keyframes disappearight {
+    50% {
+        transform: skew(-50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+        opacity: 0;
+    }
+}
