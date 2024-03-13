@@ -82,7 +82,7 @@ div#about div.content div.descript-product.dark-descript-product {
 
 div#about div.content div.descript-product.dark-descript-product>div.info-product>p {
     text-align: left;
-}
+} 
 
 div#about div.content div.descript-product>div.info-product {
     display: flex;
@@ -104,9 +104,6 @@ div#about div.content div.descript-product>div.img-product>img {
     height: 100%;
     object-fit: cover;
 }
-
-
-
 
 div#about div.content div.list-products div.card-producto {
     flex-basis: 30%;
@@ -263,9 +260,3 @@ div#imgTeam img{
     animation-delay: 0.8s;
 }
 
-.fade {
-    margin: 50px;
-    padding: 50px;
-    background-color: lightgreen;
-    opacity: 1;
-}
